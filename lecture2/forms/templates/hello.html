@@ -1,9 +1,11 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-    Hello!
+    Hello {{name}} !
 {% endblock %}
 
 {% block body %}
-    Hello, {{ name }}!
+    Hello, {{ name }}! <br>
+    You are {{ age}} years old today! <br>
+    And your favorite game is {{ games }}!!
 {% endblock %}

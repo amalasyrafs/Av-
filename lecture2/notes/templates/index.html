@@ -16,4 +16,8 @@
         <input type="text" name="note" placeholder="Enter Note Here">
         <button>Add Note</button>
     </form>
+
+    <form action="{{url_for('logout')}}" method="get">
+      <button> Clear Notes</button>
+    </form>
 {% endblock %}
