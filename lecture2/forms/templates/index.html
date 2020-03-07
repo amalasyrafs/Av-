@@ -1,12 +1,21 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-    First Page
+First Page
 {% endblock %}
 
 {% block body %}
-    <form action="{{ url_for('hello') }}" method="post">
-        <input type="text" name="name" placeholder="Enter Your Name">
-        <button>Submit</button>
-    </form>
+<form action="{{ url_for('hello') }}" method="post">
+  <input type="text" name="name" placeholder="Enter Your Nama">
+  <input type="number" name="age" placeholder="Whats your Age">
+
+  <select name="games">
+    <option value=""disabled selected> Your favorite game </option>
+    <option value="Dota 2">Dota 2</option>
+    <option value="PUBG"> PUBG </option>
+    <option value="Fifa20"> Fifa 20 </option>
+  </select>
+
+  <button>Submit</button>
+</form>
 {% endblock %}

@@ -5,4 +5,5 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     names = ["Alice", "Bob", "Charlie"]
-    return render_template("index.html", names=names)
+    games =["Dota 2", "Fortnite", "Fifa 20", "Pubg"]
+    return render_template("index.html", names=names, games = games)
